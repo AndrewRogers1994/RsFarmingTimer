@@ -35,6 +35,62 @@
         app:layout_constraintTop_toBottomOf="@+id/Title" />
 
     <LinearLayout
+        android:id="@+id/firstRow"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SelectSeed">
+
+        <RadioButton
+            android:id="@+id/potatoButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_weight="2"
+            android:background="@drawable/custom_radio_button"
+            android:button="@null"
+            android:text="Level 1\n Potato"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/onionButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_weight="2"
+            android:background="@drawable/custom_radio_button"
+            android:button="@null"
+            android:text="Level 5\n Onion"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/cabbageButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_weight="2"
+            android:background="@drawable/custom_radio_button"
+            android:button="@null"
+            android:text="Level 7\n Cabbage"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
         android:id="@+id/secondRow"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -48,32 +104,47 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/firstRow">
 
-        <Button
+        <RadioButton
             android:id="@+id/tomatoButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
             android:layout_weight="2"
+            android:background="@drawable/custom_radio_button"
             android:text="Level 12\n Tomato"
+            android:textAlignment="center"
             android:textColor="#000000"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:button="@null"/>
 
-        <Button
+        <RadioButton
             android:id="@+id/sweetcornButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
             android:layout_weight="2"
+            android:background="@drawable/custom_radio_button"
             android:text="Level 20\n Sweetcorn"
+            android:textAlignment="center"
             android:textColor="#000000"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:button="@null"/>
 
-        <Button
-            android:id="@+id/srawberryButton"
+        <RadioButton
+            android:id="@+id/strawberryButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
             android:layout_weight="2"
+            android:background="@drawable/custom_radio_button"
             android:text="Level 31\n Strawberry"
+            android:textAlignment="center"
             android:textColor="#000000"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:button="@null"/>
 
     </LinearLayout>
 
@@ -97,73 +168,40 @@
             android:layout_height="wrap_content"
             android:layout_weight="4" />
 
-        <Button
+        <RadioButton
             android:id="@+id/watermelonButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
             android:layout_weight="2"
+            android:background="@drawable/custom_radio_button"
             android:text="Level 47\n Watermelon"
             android:textAlignment="center"
             android:textColor="#000000"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:button="@null"/>
 
-        <Button
+        <RadioButton
             android:id="@+id/snapeGrassButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
             android:layout_weight="2"
+            android:background="@drawable/custom_radio_button"
             android:text="Level 67\n Snape grass"
             android:textAlignment="center"
             android:textColor="#000000"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:button="@null"/>
 
         <Space
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="4" />
+            android:layout_weight="4"
+            />
 
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/firstRow"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="8dp"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/SelectSeed">
-
-        <Button
-            android:id="@+id/potatoButton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="2"
-            android:text="Level 1\n Potato"
-            android:textAlignment="center"
-            android:textColor="#000000"
-            android:textStyle="bold" />
-
-        <Button
-            android:id="@+id/onionButton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="2"
-            android:text="Level 5\n Onion"
-            android:textColor="#000000"
-            android:textStyle="bold" />
-
-        <Button
-            android:id="@+id/cabbageButton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="2"
-            android:text="Level 7\n Cabbage"
-            android:textColor="#000000"
-            android:textStyle="bold" />
     </LinearLayout>
 
     <TextView
@@ -203,6 +241,7 @@
             android:background="#F8F8F9"
             android:backgroundTint="#D4D5D6"
             android:text="South of Falador"
+
             android:textColor="#020000"
             android:textStyle="bold" />
 
